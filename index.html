@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+  </head>
+  <body>
+        <div id="main"> this a div element The constructor function is where you initiate the component's properties.
+
+          In React, component properties should be kept in an object called state.
+          
+          You will learn more about state later in this tutorial.
+          
+          The constructor function is also where you honor the inheritance of the parent component by including the super() statement, which executes the parent component's constructor function, and your component has access to all the functions of the parent component (React.Component).</div>
+        <button onclick="test()">click</button>
+        <script type= 'text/javascript'>
+            function test(){
+              var ele = document.getElementsById('main');
+              ele.innerHTML = "hello element"
+            }
+
+
+
+            
+
+        </script>
+
+        <h1 style="color: black;"><i>Using element object we can also add style attributes at runtime</i></h1>
+
+        <div id="main" style="color: brown;"></div>
+        <button onclick="applycolor('red')">Red</button>
+        <button onclick="applycolor('black')">Red</button>
+        <button onclick="applycolor('blue')">Red</button>
+        <button onclick="applycolor('yellow')">yellow</button>
+        <script type='text/javascript'>
+          function applycolor(c){
+            var ele = document.getElementById('main');
+            ele.style.color = c;
+
+          }
+        </script>
+
+        
+  </body>
+</html>

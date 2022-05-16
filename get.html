@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script type="text/javascript">
+        function fetch(){
+            let xhr = new XMLHttpRequest();
+            //xhr.open("get", "https://jsonplaceholder.typicode.com/users", true);
+            xhr.open("get" ,"https://jsonplaceholder.typicode.com/posts", true);
+            xhr.send();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState==4){
+                    setTimeout(function(){
+                        let ele = document.getElementById('main');
+                        let data = xhr.responseText;
+                        let jsTypes = JSON.parse(data);
+                        let htmlContent = '';
+                        for(let i = 0; i < jsTypes.length; i++){
+                            htmlContent = `<p>${htmlContent} Id = ${jsTypes[i].id},
+                                Name = ${jsTypes}[i].name}</p>`
+    
+
+                        }
+                        ele.innerHTML = htmlContent;
+                    },200);
+                }
+            }
+        
+        let ele = document.getElementById(`main`);
+        ele.innerHTML = 'please wait..............'
+        }
+    </script> -->
+
+
+
+    <script type="text/javascript">
+
+        let id =23451;
+
+        let qty=5;
+
+        let oldWay="http://localhost:9980/product/"+id+"/qty"+qty+"/";
+
+        let newWay=`http://localhost:9980/product/"${id}"/qty"${qty}`;
+
+        document.write("<p>Old way: "+oldWay+"</p>");
+
+        document.write(`<p>New way: ${oldWay}</p>`);
+
+        let products=["bus","car","bycycle","lorry"];
+
+        document.write("<ul>")
+
+            for(i=0;i<products.length;i++){
+
+                document.write("<li>"+products[i]+ " is at position"+i+"</li>");
+
+            }
+
+            document.write("</ul>");
+
+            document.write(`<ul>`);
+
+               for(i=0; i < products.length; i++){
+
+                   document.write(`<li>${products[i]} is at postion ${i}</li>`)
+
+               }
+
+               document.write(`</ul>`);
+
+    </script>
+    
+</body>
+</html>
