@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let items = [2, 3, 4, 5];
+        document.write(`<p>find 4 is present: ${items.includes(4)}</p>`);
+        let emp = {id :1000, name : "Mahesh"};
+        let empValues = Object.values(emp);
+        document.write(`<p>employee: ${empValues}</p>`);
+        let emoEntries = Object.entries(emp);
+        document.write(`<p>empenties: ${emoEntries}</p>`);
+        for(let [m, a] of empEntries){
+            document.write(`<p>property = ${m}, value = ${a}</p>`)
+        }
+    </script>
+</body>
+</html>
